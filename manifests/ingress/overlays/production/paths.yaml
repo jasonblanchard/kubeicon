@@ -1,17 +1,15 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: example-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
+  name: gateway
 spec:
   rules:
   - http:
       paths:
-      - pathType: Prefix
-        path: /api(/|$)(.*)
+      - pathType: ImplementationSpecific
+        path: /production/api(/|$)(.*)
         backend:
           service:
-            name: api
+            name: api-production
             port:
               number: 8080
