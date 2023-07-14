@@ -1,6 +1,3 @@
-- Spin up a second gRPC service & wire up to api
-
-
 - Update API to use buf connect
 - Check with adam about manifest management
 - Monitoring - prometheus & grafana
@@ -11,3 +8,4 @@
 
 - Grok ingress routing
 - Kustomize & Helm refresher
+- Spin up a second gRPC service & wire up to api

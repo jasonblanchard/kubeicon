@@ -1,4 +1,4 @@
-TAG=1
+TAG=2
 
 build:
 	docker build -t kubeicon-api:${TAG} .

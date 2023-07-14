@@ -6,7 +6,3 @@ nameSuffix: -production
 commonLabels:
   variant: production
 namespace: production
-configMapGenerator:
-  - literals:
-      - UPSTREAM_HOST=http://upstream-production:8080
-    name: api-config
